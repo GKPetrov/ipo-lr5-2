@@ -5,7 +5,7 @@ if len(string1)==len(string2):#проверка равенства длины с
     for i in range(len(string2)):#проверка на аннаграмму
         if string1[i] == string2[len(string2)-i-1]:
             parametr=True
-if(parametr):                            #вывод
+if parametr:                            #вывод
     print('Строчки аннаграмы')
 else:
     print('Строки разные')
