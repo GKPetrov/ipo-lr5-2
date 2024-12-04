@@ -1,12 +1,11 @@
-a = input('Введите 1 строку ')#Ввод двух строк
-b = input('Введите 2 строку ')
-c = False
-if(len(a)==len(b)):#проверка равенства длины строк
-    for i in range(len(a)):#проверка на аннаграмму
-        if(a[i] in b):
-            c=True
-        i+=1
-if(c):                            #вывод
+string1 = input('Введите 1 строку ')#Ввод двух строк
+string2 = input('Введите 2 строку ')
+parametr = False
+if(len(string1)==len(string2)):#проверка равенства длины строк
+        for i in string1:#проверка на аннаграмму
+            if i in string2:
+                parametr=True
+if(parametr):                            #вывод
     print('Строчки аннаграмы')
-if(c==False):
+else:
     print('Строки разные')
